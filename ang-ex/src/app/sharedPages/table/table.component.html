@@ -1,0 +1,25 @@
+<div class="container-fluid" [formGroup]="info">
+  <div formArrayName="infoData">
+    <div *ngFor="let infoDataForm of infoData.controls; let i = index">
+      <div
+        class="conatiner mx-5 my-4 px-5 d-flex justify-content-around"
+        [formGroup]="info"
+      >
+        <input type="text" placeholder="Firstname" formControlName="fname" />
+        <input type="text" placeholder="Lastname" formControlName="lname" />
+        <input type="tex" placeholder="Age" formControlName="age" />
+        <button
+          type="button"
+          class="btn btn-danger my-3"
+          (click)="removeInfo(i)"
+        >
+          Remove
+        </button>
+      </div>
+      <hr class="bg-danger border-2 border-top border-danger" />
+    </div>
+  </div>
+</div>
+<button type="button" class="btn btn-info my-3" (click)="addData()">
+  Add new
+</button>
