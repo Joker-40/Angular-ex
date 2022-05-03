@@ -10,6 +10,7 @@ import { NavbarComponent } from './sharedPages/navbar/navbar.component';
 import { FooterComponent } from './sharedPages/footer/footer.component';
 import { TableComponent } from './sharedPages/table/table.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ChildComponent } from './child/child.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ContactComponent,
     NavbarComponent,
     FooterComponent,
-    TableComponent
+    TableComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ang-ex';
+  value : string = "User";
+
+  updateInfo(item:string){
+    console.warn(item);
+    this.value = item;
+  }
 }

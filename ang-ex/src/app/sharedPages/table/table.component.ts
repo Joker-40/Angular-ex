@@ -10,6 +10,7 @@ export class TableComponent implements OnInit {
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
+    console.log(this.infoData.status);
   }
 
   info = this.fb.group({
